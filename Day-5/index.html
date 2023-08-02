@@ -19,24 +19,16 @@
   </head>
   <body>
     <div class="container-fluid">
-      <!--It also follows the properties of flexbox if we give height to its row then the height of its components will also become same as row -->
-
       <div class="row bg-info rishabh">
-        <div class="col bg-primary align-self-end">div1</div>
-        <div class="col bg-secondary align-self-center">div2</div>
-        <div class="col bg-success">div3</div>
-        <div class="col bg-danger align-self-start">div4</div>
+        <!-- We can change the order of displaying the box according to the size medium,large and small-->
+        <div class="col-4 order-lg-2 bg-primary">div1</div>
+        <!-- Bigger will come last for eg 3 is biggest of them all-->
+        <div class="col-4 order-lg-3 bg-secondary">div2</div>
+        <!-- Smaller will come first for eg 1 is smaller than 1,2 and 3 so it will come at first-->
+        <div class="col-4 order-lg-1 bg-success">div3</div>
       </div>
     </div>
 
-    <div class="container-fluid">
-      <!-- We can use the property of flex like justify-content in the row-->
-
-      <div class="row justify-content-center bg-secondary priyanshu">
-        <div class="col-4 bg-primary">div2</div>
-        <div class="col-4 bg-danger">div3</div>
-      </div>
-    </div>
     <!-- <pre>
 
             x-small device             0px - 575px           [ col-*     ]
